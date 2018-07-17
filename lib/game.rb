@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
+# initializes the game and handles the turns
 class Game
   attr_accessor :players, :board, :turn
 

@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
+# contains the board and its cases, aswell as the methods that modify/check on the state of the board
 class Board
   attr_accessor :boardcases
 
