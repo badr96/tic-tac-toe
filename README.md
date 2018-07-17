@@ -1,7 +1,10 @@
 # tic-tac-toe
 
 Tic tac toe project as a THP assignment to learn OOP
-Collaborator : Kamus, Fadia
+
+Two players can duel each other in a tic tac toe game, no AI
+
+Collaborators : Kamus, Fadia
 
 ### About the classes
 
