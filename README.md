@@ -1,6 +1,7 @@
 # tic-tac-toe
 
 Tic tac toe project as a THP assignment to learn OOP
+Collaborator : Kamus, Fadia
 
 ### About the classes
 
