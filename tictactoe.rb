@@ -15,6 +15,9 @@ class Game
       @board.print_board
       puts "#{@players[@turn].name} turn's to play"
       puts "Where do you wish to play ?"
+      print "Available cases are : "
+      @board.available_cases.each{ |x| print "#{x + 1} " }
+      puts ''
       print '> '
       choice = gets.chomp.to_i - 1
       break if @board.try_play(choice, @players[@turn])
@@ -92,6 +95,14 @@ class Board
       puts ''
       puts '---|---|---' if line != 2
     end
+  end
+
+  def available_cases
+    available = []
+    @boardcases.each_with_index do |boardcase, index|
+      available.push(index) if boardcase.status == ' '
+    end
+    available
   end
 
   private
