@@ -12,7 +12,7 @@ class Game
 
   def play_turn
     loop do
-      @board.print_board
+      @board.print_board_example
       puts "#{@players[@turn].name} turn's to play"
       puts "Where do you wish to play ?"
       print "Available cases are : "
@@ -97,6 +97,15 @@ class Board
     end
   end
 
+  def print_board_example
+      puts ''
+      puts " #{@boardcases[0]} | #{@boardcases[1]} | #{@boardcases[2]}       1 | 2 | 3"
+      puts '---|---|---     ---|---|---'
+      puts " #{@boardcases[3]} | #{@boardcases[4]} | #{@boardcases[5]}       4 | 5 | 6"
+      puts '---|---|---     ---|---|---'
+      puts " #{@boardcases[6]} | #{@boardcases[7]} | #{@boardcases[8]}       7 | 8 | 9"
+  end
+
   def available_cases
     available = []
     @boardcases.each_with_index do |boardcase, index|
@@ -155,6 +164,10 @@ class BoardCase
 
   def initialize
     @status = ' '
+  end
+
+  def to_s
+    @status
   end
 end
 
