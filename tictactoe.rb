@@ -158,5 +158,9 @@ class BoardCase
   end
 end
 
-game = Game.new
-game.play
+def main
+  game = Game.new
+  game.play
+end
+
+main
